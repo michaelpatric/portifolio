@@ -1,8 +1,10 @@
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,44 +12,7 @@ body {
     background-color: #f4f4f4;
 }
 
-#chat {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#messages {
-    height: 300px;
-    overflow-y: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-}
-
-#userInput {
-    width: calc(100% - 90px);
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-#sendButton {
-    width: 80px;
-    padding: 10px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#sendButton:hover {
-    background-color: #218838;
-}
-
-/* Estilo do cabeçalho */
+/* Estilos do Cabeçalho */
 header {
     background-color: #2c3e50;
     color: #fff;
@@ -64,7 +29,7 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Estilo da navegação */
+/* Estilos da Navegação */
 nav {
     background-color: #34495e;
     padding: 10px 0;
@@ -91,7 +56,7 @@ nav ul li a:hover {
     color: #1abc9c;
 }
 
-/* Estilo das seções */
+/* Estilos das Seções */
 section {
     padding: 40px 20px;
     margin: 20px 0;
@@ -116,7 +81,7 @@ section ul {
     margin-left: 20px;
 }
 
-/* Estilo do formulário de contato */
+/* Estilos do Formulário de Contato */
 form {
     display: flex;
     flex-direction: column;
@@ -153,7 +118,7 @@ form button:hover {
     background-color: #16a085;
 }
 
-/* Estilo do rodapé */
+/* Estilos do Rodapé */
 footer {
     background-color: #2c3e50;
     color: #fff;
@@ -190,8 +155,56 @@ footer p {
     }
 }
 
-/*chatbot*/
-/* Estilos para o campo de entrada do chat */
+/* Estilos do Chatbot */
+#chatbot-section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatbot-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#chatbot {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#chatbot-messages {
+    height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#chatbot-user-input {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#chatbot-send-button {
+    width: 80px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#chatbot-send-button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para o Campo de Entrada do Chat */
 .form-group {
     margin-bottom: 15px;
 }
@@ -204,10 +217,10 @@ footer p {
     box-sizing: border-box;
 }
 
-/* Estilos para o botão de envio do chat */
+/* Estilos para o Botão de Envio do Chat */
 .btn {
-    background-color: #4CAF50; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -215,18 +228,15 @@ footer p {
 }
 
 .btn:hover {
-    background-color: #3e8e41; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #3e8e41;
 }
 
-#chatbot {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 300px;
-    margin: 20px auto;
+#chatbot-input {
+    display: flex;
+    align-items: center;
 }
 
-#chatbot-messages {
-    height: 200px;
-    overflow-y: scroll;
-    margin-bottom: 10px;
+#chatbot-user-input {
+    flex-grow: 1;
+    margin-right: 10px;
 }
