@@ -11,7 +11,7 @@
         <h1>MK Tech</h1>
         <p>Soluções inteligentes para o seu negócio</p>
     </header>
-    
+
     <nav>
         <ul>
             <li><a href="#sobre">Sobre</a></li>
@@ -19,12 +19,12 @@
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-    
+
     <section id="sobre">
         <h2>Sobre Nós</h2>
         <p>A MK Tech oferece soluções inovadoras em tecnologia, garantindo eficiência e segurança para sua empresa.</p>
     </section>
-    
+
     <section id="servicos">
         <h2>Nossos Serviços</h2>
         <ul>
@@ -34,32 +34,33 @@
             <li>Suporte Técnico</li>
         </ul>
     </section>
-    
+
     <section id="contato">
         <h2>Entre em Contato</h2>
         <form>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <h1>Chatbot com DeepSeek API</h1>
-    <div id="chat">
-        <div id="messages"></div>
-        <input type="text" id="userInput" placeholder="Digite sua mensagem...">
-        <button id="sendButton">Enviar</button>
+    <div id="chatbot">
+        <div id="chatbot-messages" aria-live="polite"></div>
+        <div id="chatbot-loading" style="display: none;">Carregando...</div>
+        <div id="chatbot-input">
+            <input type="text" id="chatbot-user-input" placeholder="Digite sua mensagem..." aria-label="Digite sua mensagem">
+            <button id="chatbot-send-button" aria-label="Enviar mensagem">Enviar</button>
+        </div>
     </div>
-    <script src="js/script.js"></script>
-    
+
     <footer>
         <p>&copy; 2025 MK Tech - Todos os direitos reservados</p>
     </footer>
-    
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
