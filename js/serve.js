@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const apiKey = 'AIzaSyDpEOIpv-dvMrPdM4xdBTqFzKT8rBgKKQU'; // Substitua pela sua chave de API
+const apiKey = 'xxx-xxx'; // Substitua pela sua chave de API
 const genAI = new GoogleGenerativeAI(apiKey);
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
